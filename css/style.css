@@ -1,0 +1,225 @@
+* {
+  font-family: 'Cairo', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  max-height: 100vh;
+  background-color: #0f1123;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fa1e0e), to(#290149));
+  background: linear-gradient(#fa1e0e, #290149);
+  -webkit-clip-path: circle(25% at right 80%);
+          clip-path: circle(25% at right 80%);
+}
+
+section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#2196f3), to(#e91e63));
+  background: linear-gradient(#2196f3, #e91e63);
+  -webkit-clip-path: circle(30% at 10% 10%);
+          clip-path: circle(30% at 10% 10%);
+}
+
+section .container {
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 40px 0;
+}
+
+section .container .card {
+  position: relative;
+  width: 85vw;
+  height: 80vh;
+  margin: 20px;
+  background-color: rgba(78, 78, 78, 0.37);
+  -webkit-box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section .container .card .img_wraper {
+  width: 550px;
+  -webkit-transform: translate(-70px, -40px);
+          transform: translate(-70px, -40px);
+}
+
+section .container .card .img_wraper img {
+  width: 100%;
+  -webkit-transform: translateX(80px);
+          transform: translateX(80px);
+}
+
+section .container .card .img_wraper h2 {
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+  margin-top: -100px;
+}
+
+section .container .card .img_wraper.forger_pass {
+  -webkit-transform: translate(-40px, -40px);
+          transform: translate(-40px, -40px);
+}
+
+section .container .card .img_wraper.forger_pass img {
+  width: 80%;
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+}
+
+section .container .card .img_wraper.forger_pass h2 {
+  padding: 0 15px;
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+  margin-top: -20px;
+}
+
+@media (max-width: 1190px) {
+  section .container .card .img_wraper {
+    display: none;
+  }
+}
+
+section .container .card .form_wraper {
+  width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section .container .card .form_wraper .header_wraper h2 {
+  color: #fff;
+  font-size: 30px;
+}
+
+section .container .card .form_wraper form {
+  width: 100%;
+}
+
+section .container .card .form_wraper form .form_controle {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8px;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 0 15px rgba(99, 99, 99, 0.05);
+          box-shadow: 0 0 15px rgba(99, 99, 99, 0.05);
+  margin-bottom: 30px;
+}
+
+section .container .card .form_wraper form .form_controle input {
+  font-size: 20px;
+  width: 100%;
+  color: #fff;
+  border: none;
+  background-color: transparent;
+}
+
+section .container .card .form_wraper form .form_controle input:focus {
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+}
+
+section .container .card .form_wraper form .form_controle span i {
+  font-size: 20px;
+  color: #888;
+}
+
+section .container .card .form_wraper form .forget_pass a {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  margin-top: -15px;
+  margin-bottom: 15px;
+  z-index: 999;
+}
+
+section .container .card .form_wraper form .btn_wraper {
+  width: 100%;
+}
+
+section .container .card .form_wraper form .btn_wraper button {
+  width: 100%;
+  padding: 8px;
+  background: -webkit-gradient(linear, right top, left top, from(#2196f3), to(#4c386d));
+  background: linear-gradient(to left, #2196f3, #4c386d);
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */

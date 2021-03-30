@@ -5,17 +5,17 @@
 <section>
   <div class="container">
     <div class="card">
-      <div class="img_wraper">
-        <img src="media/login.svg">
+      <div class="img_wraper forger_pass">
+        <img src="media/forget.svg">
         <h2> 
-          A few more clicks to 
-          sign in to your account. 
+          A few More Clicks To
+          Reset Your Password.
         </h2>
       </div>
 
       <div class="form_wraper">
         <div class="header_wraper">
-          <h2> Login </h2>
+          <h2> Reset Password </h2>
         </div>
 
         <form action="">
@@ -26,19 +26,8 @@
             </span>
           </div>
 
-          <div class="form_controle">
-            <input type="password" placeholder="Password">
-            <span>
-              <i class="fab fa-keycdn"></i>
-            </span>
-          </div>
-
-          <div class="forget_pass">
-            <a href="ForgetPass.php"> Forgert Password ? </a>
-          </div>
-
           <div class="btn_wraper">
-            <button> Login </button>
+            <button> Set New Password </button>
           </div>
         </form>
       </div>
